@@ -1,0 +1,8 @@
+# Temporary files
+temp_docx/
+*.tmp
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
