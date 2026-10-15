@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactModal();
   initMobileNav();
   initTableSearch();
+  initScrollSpy();
 });
 
 // SVG Icons helper
@@ -449,4 +450,59 @@ function initMobileNav() {
       navLinks.classList.remove('is-mobile-open');
     });
   });
+}
+
+/**
+ * 8. ScrollSpy & Sticky Nav Elevation
+ */
+function initScrollSpy() {
+  const header = document.getElementById('siteHeader');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sections = [];
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      const target = document.querySelector(href);
+      if (target) {
+        sections.push({ id: href, el: target, link });
+      }
+    }
+  });
+
+  const updateNav = () => {
+    const scrollY = window.scrollY;
+
+    // Header shadow & border elevation
+    if (header) {
+      if (scrollY > 15) {
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('is-scrolled');
+      }
+    }
+
+    // ScrollSpy active link tracking
+    const triggerOffset = scrollY + 140;
+    let current = null;
+
+    sections.forEach(item => {
+      const top = item.el.offsetTop;
+      const height = item.el.offsetHeight;
+      if (triggerOffset >= top && triggerOffset < top + height) {
+        current = item;
+      }
+    });
+
+    sections.forEach(item => {
+      if (current && item.id === current.id) {
+        item.link.classList.add('is-active');
+      } else {
+        item.link.classList.remove('is-active');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
 }
