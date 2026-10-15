@@ -647,7 +647,7 @@ const PRICING_DATA = {
           tooltip: "Ask questions in conversational Bangla (আজ কত টাকার বিক্রি হয়েছে?) and get live data.",
           starter: false,
           basic: false,
-          medium: false,
+          medium: true,
           high: true
         },
         {
@@ -655,15 +655,15 @@ const PRICING_DATA = {
           tooltip: "AI detects fast/slow-moving goods and predicts reorder requirements.",
           starter: false,
           basic: false,
-          medium: false,
+          medium: true,
           high: true
         },
         {
           name: "AI Shopping Assistant Bot for E-commerce Store",
           tooltip: "Interactive conversational bot on your web store to assist customers and close sales.",
           starter: false,
-          basic: false,
-          medium: false,
+          basic: true,
+          medium: true,
           high: true
         },
         {
