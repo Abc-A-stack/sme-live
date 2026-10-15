@@ -26,7 +26,8 @@ const PRICING_DATA = {
         users: null, // Do not invent limit
       },
       highlights: [
-        "Essential POS & Sales Management",
+        "Supplier & Purchasing Management",
+        "Bank Accounts & MFS (bKash/Nagad) Ledger",
         "Basic Inventory Management",
         "Simple Stock Adjustment & Opening Stock",
         "AI-Powered Sales Reporting",
@@ -53,10 +54,10 @@ const PRICING_DATA = {
       },
       highlights: [
         "All Starter Features included",
-        "Offline POS with Automatic Sync (Sell without internet)",
+        "Smart POS & Offline Sync (Sell without internet)",
+        "Single Courier Integration (Pathao or Steadfast)",
         "Sales Return & Exchange Processing",
         "Automatic Barcode Generation & Label Printing",
-        "Purchase & Supplier Management",
         "Cash Book, Bank Book & Petty Cash",
         "Daily Expense Tracking & Reports"
       ],
@@ -213,7 +214,7 @@ const PRICING_DATA = {
         {
           name: "Smart POS Billing System",
           tooltip: "Quick barcode scanning, search by SKU/name, touchscreen cart.",
-          starter: true,
+          starter: false,
           basic: true,
           medium: true,
           high: true
@@ -221,7 +222,7 @@ const PRICING_DATA = {
         {
           name: "Thermal Receipt (58mm/80mm) & A4 Invoices",
           tooltip: "Print on standard thermal roll printers or full A4 vouchers.",
-          starter: true,
+          starter: false,
           basic: true,
           medium: true,
           high: true
@@ -253,7 +254,7 @@ const PRICING_DATA = {
         {
           name: "Hold & Resume Invoices / Draft Sales",
           tooltip: "Save pending carts during peak counter rushes and retrieve anytime.",
-          starter: true,
+          starter: false,
           basic: true,
           medium: true,
           high: true
@@ -355,7 +356,7 @@ const PRICING_DATA = {
         {
           name: "Supplier Profiles & Contact Database",
           tooltip: "Maintain complete vendor details and opening balances.",
-          starter: false,
+          starter: true,
           basic: true,
           medium: true,
           high: true
@@ -363,7 +364,7 @@ const PRICING_DATA = {
         {
           name: "Purchase Orders & Goods Receiving Notes (GRN)",
           tooltip: "Formal PO creation, partial and full receiving against orders.",
-          starter: false,
+          starter: true,
           basic: true,
           medium: true,
           high: true
@@ -371,7 +372,7 @@ const PRICING_DATA = {
         {
           name: "Supplier Payable & Due Ledger",
           tooltip: "Track outstanding supplier invoices, advance payments, and payment vouchers.",
-          starter: false,
+          starter: true,
           basic: true,
           medium: true,
           high: true
@@ -379,7 +380,7 @@ const PRICING_DATA = {
         {
           name: "Purchase Return & Cancellation Workflow",
           tooltip: "Process damaged goods returns and debit notes to suppliers.",
-          starter: false,
+          starter: true,
           basic: true,
           medium: true,
           high: true
@@ -387,7 +388,7 @@ const PRICING_DATA = {
         {
           name: "Purchase Cost History & Price Fluctuations",
           tooltip: "Monitor vendor price adjustments and automatic product cost updates.",
-          starter: false,
+          starter: true,
           basic: true,
           medium: true,
           high: true
@@ -410,7 +411,7 @@ const PRICING_DATA = {
         {
           name: "Bank Accounts & MFS (bKash/Nagad) Ledger",
           tooltip: "Manage multiple bank and mobile money accounts in one view.",
-          starter: false,
+          starter: true,
           basic: true,
           medium: true,
           high: true
@@ -444,7 +445,7 @@ const PRICING_DATA = {
           tooltip: "Record company assets, schedules, and asset write-offs.",
           starter: false,
           basic: false,
-          medium: false,
+          medium: true,
           high: true
         }
       ]
@@ -456,15 +457,23 @@ const PRICING_DATA = {
       features: [
         {
           name: "Direct Pathao Courier Booking & API",
-          tooltip: "Book parcels directly from the order list and print consignment labels.",
+          tooltip: "Book parcels directly from the order list and print consignment labels. Basic plan includes choice of 1 courier (Pathao or Steadfast).",
           starter: false,
-          basic: false,
+          basic: "1 Courier (Pathao/Steadfast)",
           medium: true,
           high: true
         },
         {
-          name: "Steadfast & REDX Courier Integration",
-          tooltip: "Multi-courier dispatch with automated tracking code sync.",
+          name: "Steadfast Courier Booking & API",
+          tooltip: "Direct API booking, pickup requests, and automated parcel status sync. Basic plan includes choice of 1 courier (Pathao or Steadfast).",
+          starter: false,
+          basic: "1 Courier (Pathao/Steadfast)",
+          medium: true,
+          high: true
+        },
+        {
+          name: "REDX & Multi-Courier Simultaneous Dispatch",
+          tooltip: "Dispatch through multiple delivery partners concurrently across different branches or zones.",
           starter: false,
           basic: false,
           medium: true,
@@ -474,7 +483,7 @@ const PRICING_DATA = {
           name: "Courier COD Collection & Settlement Reconciliation",
           tooltip: "Reconcile received cash-on-delivery against courier remittance statements.",
           starter: false,
-          basic: false,
+          basic: true,
           medium: true,
           high: true
         },
@@ -488,10 +497,10 @@ const PRICING_DATA = {
         },
         {
           name: "Courier Fraud / Delivery Risk Assessment",
-          tooltip: "Analyze customer return rate history before accepting orders.",
+          tooltip: "Analyze customer return rate history before accepting orders to minimize delivery failure costs.",
           starter: false,
-          basic: false,
-          medium: false,
+          basic: true,
+          medium: true,
           high: true
         }
       ]
