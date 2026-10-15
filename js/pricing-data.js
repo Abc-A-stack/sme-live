@@ -795,7 +795,7 @@ const PRICING_DATA = {
     {
       icon: "map-pin",
       title: "Built Specially for Bangladesh",
-      desc: "Pre-integrated with bKash, Nagad, SSLCommerz, Pathao, Steadfast, NBR Mushak VAT forms, and native BDT currency formatting."
+      desc: "Pre-integrated with bKash, Nagad, SSLCommerz, Pathao, Steadfast courier logistics, and native BDT currency formatting."
     },
     {
       icon: "bot",
