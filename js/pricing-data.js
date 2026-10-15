@@ -21,6 +21,7 @@ const PRICING_DATA = {
       limits: {
         products: "200 Products",
         hosting: "1 GB Storage",
+        branches: "1 Branch",
         traffic: null, // Do not invent limit
         users: null, // Do not invent limit
       },
@@ -46,6 +47,7 @@ const PRICING_DATA = {
       limits: {
         products: "250 Products",
         hosting: "2 GB Storage",
+        branches: "1 Branch",
         traffic: "Up to 5,000 visits / mo",
         users: "Up to 5 Admin Users",
       },
@@ -72,6 +74,7 @@ const PRICING_DATA = {
       limits: {
         products: "350 Products",
         hosting: "4 GB Storage",
+        branches: "2 Branches",
         traffic: "Up to 10,000 visits / mo",
         users: "Up to 10 Admin Users",
       },
@@ -99,6 +102,7 @@ const PRICING_DATA = {
       limits: {
         products: "Unlimited Products",
         hosting: "10 GB Storage",
+        branches: "5 Branches",
         traffic: "Unlimited (Subject to fair-use)",
         users: "Unlimited Admin Users",
       },
@@ -110,7 +114,6 @@ const PRICING_DATA = {
         "AI-Powered Business Intelligence (Sales, Stock & Accounts)",
         "AI Shopping Assistant for E-commerce",
         "Facebook & Instagram Marketing Automation",
-        "Manufacturing & Production Management",
         "Advanced Security, Permissions & Audit Trails"
       ],
       ctaText: "Upgrade to High",
@@ -689,17 +692,17 @@ const PRICING_DATA = {
         {
           name: "Multi-Branch Outlets & Branch Managers",
           tooltip: "Add multiple physical outlets with dedicated branch manager permissions.",
-          starter: false,
-          basic: false,
-          medium: false,
-          high: true
+          starter: "1 Branch",
+          basic: "1 Branch",
+          medium: "2 Branches",
+          high: "5 Branches"
         },
         {
           name: "Centralized Product Catalog & Pricing",
           tooltip: "Control products globally or allow branch-specific price tiers.",
           starter: false,
           basic: false,
-          medium: false,
+          medium: true,
           high: true
         },
         {
@@ -707,38 +710,7 @@ const PRICING_DATA = {
           tooltip: "Compare revenue, expenses, and profits across all branches side-by-side.",
           starter: false,
           basic: false,
-          medium: false,
-          high: true
-        }
-      ]
-    },
-    {
-      id: "manufacturing",
-      title: "Manufacturing (Optional Module)",
-      icon: "tool",
-      features: [
-        {
-          name: "Bill of Materials (BOM) & Recipes",
-          tooltip: "Define raw material quantities required to produce finished goods.",
-          starter: false,
-          basic: false,
-          medium: false,
-          high: true
-        },
-        {
-          name: "Production Orders & Workstation Planning",
-          tooltip: "Track production status from raw materials to finished packaging.",
-          starter: false,
-          basic: false,
-          medium: false,
-          high: true
-        },
-        {
-          name: "Raw Material Issue, Wastage & Costing",
-          tooltip: "Monitor material consumption, factory wastage, and unit production cost.",
-          starter: false,
-          basic: false,
-          medium: false,
+          medium: true,
           high: true
         }
       ]

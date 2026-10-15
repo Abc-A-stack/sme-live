@@ -23,7 +23,8 @@ const ICONS = {
   server: `<svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><rect x="3" y="4" width="14" height="4" rx="1.5" stroke-width="1.7"/><rect x="3" y="12" width="14" height="4" rx="1.5" stroke-width="1.7"/><path d="M6 6h.01M6 14h.01" stroke-width="2" stroke-linecap="round"/></svg>`,
   box: `<svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M10 2.5L17 6.5v7l-7 4-7-4v-7l7-4z" stroke-width="1.6"/><path d="M3 6.5l7 4 7-4M10 10.5v7" stroke-width="1.6"/></svg>`,
   users: `<svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><circle cx="7.5" cy="6.5" r="3" stroke-width="1.7"/><path d="M2.5 16.5a5 5 0 0110 0" stroke-width="1.7"/><path d="M14 4.5a3 3 0 010 6m-1 6a4.5 4.5 0 004.5-4.5" stroke-width="1.7"/></svg>`,
-  activity: `<svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M3 10h3.5l2.5-6 3 12 2.5-6H17" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`
+  activity: `<svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M3 10h3.5l2.5-6 3 12 2.5-6H17" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  branch: `<svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M3 7l7-4 7 4v9a1 1 0 01-1 1H4a1 1 0 01-1-1V7z" stroke-width="1.6"/><path d="M7 17v-6h6v6" stroke-width="1.6"/></svg>`
 };
 
 /**
@@ -52,6 +53,14 @@ function initPricingCards() {
         <li class="capacity-item">
           ${ICONS.server}
           <span>Storage: <strong>${pkg.limits.hosting}</strong></span>
+        </li>
+      `);
+    }
+    if (pkg.limits.branches) {
+      capacityItems.push(`
+        <li class="capacity-item">
+          ${ICONS.branch}
+          <span>Branches: <strong>${pkg.limits.branches}</strong></span>
         </li>
       `);
     }
