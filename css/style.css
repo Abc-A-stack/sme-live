@@ -1382,17 +1382,19 @@ input, textarea, select {
 }
 
 .why-card-title {
+  font-family: var(--font-bengali), var(--font-family);
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-main);
   margin-bottom: 0.6rem;
-  letter-spacing: -0.01em;
+  line-height: 1.45;
 }
 
 .why-card-desc {
-  font-size: 0.9rem;
+  font-family: var(--font-bengali), var(--font-family);
+  font-size: 0.935rem;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.68;
 }
 
 /* ==========================================================================

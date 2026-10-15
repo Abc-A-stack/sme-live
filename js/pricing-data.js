@@ -801,37 +801,37 @@ const PRICING_DATA = {
     }
   ],
 
-  // Value proposition cards for "Why Choose Our ERP"
+  // Value proposition cards for "Why Choose Our ERP" (কেন YES SME বেছে নেবেন)
   whyChooseUs: [
     {
       icon: "refresh-cw",
-      title: "True All-in-One Synchronization",
-      desc: "When a sale happens at the counter, your stock decreases, accounting entries are auto-posted, sales commission is recorded, and e-commerce inventory syncs in real time."
+      title: "রিয়েল-টাইম স্টক ও সেলস সিঙ্ক",
+      desc: "দোকানের কাউন্টারে পণ্য বিক্রি হওয়ার সাথে সাথেই ইনভেন্টরি থেকে স্টক কমে যাবে, অ্যাকাউন্টিংয়ে স্বয়ংক্রিয় ভাউচার পোস্ট হবে এবং অনলাইন স্টোরে লাইভ স্টক আপডেট হয়ে যাবে।"
     },
     {
       icon: "wifi-off",
-      title: "Zero-Downtime Offline POS",
-      desc: "Never lose a sale during internet outages or power cuts. The POS continues barcode scanning and cash billing offline, auto-syncing seamlessly when connection returns."
+      title: "জিরো-ডাউনটাইম অফলাইন POS",
+      desc: "বিদ্যুৎ বা ইন্টারনেট চলে গেলেও আপনার দোকানের বিক্রি বন্ধ হবে না। ইন্টারনেট ছাড়াই দ্রুত বারকোড স্ক্যান, ক্যাশ মেমো তৈরি ও প্রিন্ট করা যাবে; নেট সংযোগ ফিরে এলে সকল ডাটা অটোমেটিক সিঙ্ক হবে।"
     },
     {
       icon: "map-pin",
-      title: "Built Specially for Bangladesh",
-      desc: "Pre-integrated with bKash, Nagad, SSLCommerz, Pathao, Steadfast courier logistics, and native BDT currency formatting."
+      title: "সম্পূর্ণ দেশীয় ইন্টিগ্রেশন",
+      desc: "বাংলাদেশের ব্যবসার বাস্তব চাহিদামাফিক বিকাশ ও নগদ পেমেন্ট, পাঠাও, স্টিডফাস্ট ও রেডেক্স কুরিয়ার ট্র্যাকিং এবং দেশীয় মুদ্রায় (BDT ৳) স্বয়ংক্রিয় হিসাবের সুবিধা।"
     },
     {
       icon: "bot",
-      title: "Conversational AI Intelligence",
-      desc: "Ask business questions in natural Bangla or English ('আজকের মোট লাভ কত?') to get instant insights without digging through complex accounting books."
+      title: "বাংলায় এআই (AI) বিজনেস ইনসাইট",
+      desc: "সহজ বাংলায় প্রশ্ন করেই জেনে নিন ব্যবসার সার্বিক অবস্থা—যেমন: 'আজকের মোট লাভ কত?', 'কার কাছে সবচেয়ে বেশি বকেয়া?'। এক্সেল শিট খোঁজার ঝামেলা ছাড়াই চোখের পলকে সঠিক উত্তর।"
     },
     {
       icon: "award",
-      title: "Sales Target & Bonus Automation",
-      desc: "Empower your sales team with automated target tracking, tier-based commissions, and dynamic bonuses calculated directly into payroll."
+      title: "সেলস টার্গেট ও কমিশন অটোমেশন",
+      desc: "বিক্রয়কর্মীদের ব্যক্তিগত টার্গেট নির্ধারণ, পারফরম্যান্স ট্র্যাকিং এবং টিয়ার-ভিত্তিক সেলস কমিশন স্বয়ংক্রিয়ভাবে হিসাব হয়ে সরাসরি মাসিক পে-রোলে যুক্ত হবে।"
     },
     {
       icon: "shield-check",
-      title: "Enterprise Security & Audit Trail",
-      desc: "Granular role permissions, cashier cash reconciliation, two-factor authentication, and tamper-proof transaction logs safeguard your business."
+      title: "নিজস্ব ব্র্যান্ডের মোবাইল অ্যাপ",
+      desc: "আমাদের Medium ও High প্যাকেজে আপনার নিজস্ব ব্র্যান্ডিংয়ে ডেডিকেটেড Android এবং iOS মোবাইল অ্যাপ অন্তর্ভুক্ত, যা আপনার কাস্টমারদের আধুনিক কেনাকাটার সেরা অভিজ্ঞতা দেবে।"
     }
   ],
 
