@@ -1498,17 +1498,21 @@ input, textarea, select {
 }
 
 .final-cta-title {
-  font-size: 2.65rem;
+  font-family: var(--font-bengali), var(--font-family);
+  font-size: 2.5rem;
   font-weight: 800;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
   margin-bottom: 1.1rem;
   color: #ffffff;
 }
 
 .final-cta-subtitle {
+  font-family: var(--font-bengali), var(--font-family);
   font-size: 1.15rem;
   color: #bfdbfe;
-  line-height: 1.6;
+  line-height: 1.65;
+  letter-spacing: normal;
   margin-bottom: 2.25rem;
 }
 
@@ -1518,6 +1522,11 @@ input, textarea, select {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.final-cta-actions .btn {
+  font-family: var(--font-bengali), var(--font-family);
+  font-weight: 700;
 }
 
 .btn-white {
@@ -1984,6 +1993,16 @@ input, textarea, select {
     text-align: center;
   }
 
+  .final-cta-title {
+    font-size: 1.85rem;
+    line-height: 1.35;
+  }
+
+  .final-cta-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
   .modal-window {
     max-height: 88vh;
     overflow-y: auto;
@@ -2090,6 +2109,16 @@ input, textarea, select {
 
   .modal-body {
     padding: 1.25rem 1rem;
+  }
+
+  .final-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .final-cta-actions .btn {
+    width: 100%;
+    text-align: center;
   }
 }
 
