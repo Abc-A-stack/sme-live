@@ -26,7 +26,8 @@ const ICONS = {
   users: `<svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><circle cx="7.5" cy="6.5" r="3" stroke-width="1.7"/><path d="M2.5 16.5a5 5 0 0110 0" stroke-width="1.7"/><path d="M14 4.5a3 3 0 010 6m-1 6a4.5 4.5 0 004.5-4.5" stroke-width="1.7"/></svg>`,
   activity: `<svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M3 10h3.5l2.5-6 3 12 2.5-6H17" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
   branch: `<svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M3 7l7-4 7 4v9a1 1 0 01-1 1H4a1 1 0 01-1-1V7z" stroke-width="1.6"/><path d="M7 17v-6h6v6" stroke-width="1.6"/></svg>`,
-  cloud: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`
+  cloud: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  globe: `<svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><circle cx="10" cy="10" r="7.5" stroke-width="1.7"/><path d="M2.5 10h15M10 2.5a12.5 12.5 0 010 15 12.5 12.5 0 010-15" stroke-width="1.6"/></svg>`
 };
 
 /**
@@ -55,6 +56,14 @@ function initPricingCards() {
         <li class="capacity-item">
           ${ICONS.cloud}
           <span>Hosting: <strong>${pkg.limits.hosting}</strong></span>
+        </li>
+      `);
+    }
+    if (pkg.limits.website) {
+      capacityItems.push(`
+        <li class="capacity-item">
+          ${ICONS.globe}
+          <span>Website: <strong>${pkg.limits.website}</strong></span>
         </li>
       `);
     }

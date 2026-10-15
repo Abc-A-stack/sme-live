@@ -49,6 +49,7 @@ const PRICING_DATA = {
       limits: {
         products: "250 Products",
         hosting: "VPS",
+        website: "Free Website",
         storage: "2 GB Storage",
         branches: "1 Branch",
         traffic: "Up to 5,000 visits / mo",
@@ -77,6 +78,7 @@ const PRICING_DATA = {
       limits: {
         products: "350 Products",
         hosting: "AWS",
+        website: "Free Website",
         storage: "4 GB Storage",
         branches: "2 Branches",
         traffic: "Up to 10,000 visits / mo",
@@ -106,6 +108,7 @@ const PRICING_DATA = {
       limits: {
         products: "Unlimited Products",
         hosting: "AWS",
+        website: "Free Website",
         storage: "10 GB Storage",
         branches: "5 Branches",
         traffic: "Unlimited (Subject to fair-use)",
@@ -188,7 +191,7 @@ const PRICING_DATA = {
           name: "Integrated E-commerce Web Storefront",
           tooltip: "Full responsive online shop directly connected to your ERP inventory.",
           starter: false,
-          basic: false,
+          basic: true,
           medium: true,
           high: true
         },
