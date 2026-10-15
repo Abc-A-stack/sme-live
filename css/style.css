@@ -1105,7 +1105,6 @@ input, textarea, select {
   background: #ffffff;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  overflow: hidden;
   box-shadow: var(--shadow-md);
   position: relative;
 }
@@ -1113,6 +1112,15 @@ input, textarea, select {
 .table-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 992px) {
+  .table-wrapper {
+    overflow: visible;
+  }
+  .table-scroll {
+    overflow: visible;
+  }
 }
 
 .comparison-table {
@@ -1124,13 +1132,33 @@ input, textarea, select {
   min-width: 780px;
 }
 
-/* Table Header - Cleanly anchored to table card with elegant divider */
+/* Table Header - Sticky for Presentation Flow (Approach 1) */
 .comparison-table thead th {
-  position: relative;
-  background: #ffffff;
-  padding: 1.35rem 1.25rem;
-  border-bottom: 2px solid var(--border-light);
+  position: sticky;
+  top: 3.85rem;
+  z-index: 30;
+  background-color: #ffffff;
+  padding: 1.25rem 1.25rem;
+  border-bottom: 2px solid var(--border-medium);
   vertical-align: bottom;
+  box-shadow: 0 4px 14px -3px rgba(15, 23, 42, 0.08);
+  transition: all var(--transition-fast);
+}
+
+.comparison-table thead tr th:first-child {
+  border-top-left-radius: calc(var(--radius-lg) - 1px);
+}
+
+.comparison-table thead tr th:last-child {
+  border-top-right-radius: calc(var(--radius-lg) - 1px);
+}
+
+.comparison-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: calc(var(--radius-lg) - 1px);
+}
+
+.comparison-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: calc(var(--radius-lg) - 1px);
 }
 
 .comparison-table thead th.col-feature {
@@ -1908,6 +1936,7 @@ input, textarea, select {
   }
 
   .comparison-table thead th {
+    top: 3.65rem;
     padding: 1rem 0.75rem;
   }
 
