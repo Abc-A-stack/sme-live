@@ -20,7 +20,8 @@ const PRICING_DATA = {
       setupFee: 3000,
       limits: {
         products: "200 Products",
-        hosting: "1 GB Storage",
+        hosting: "Shared",
+        storage: "1 GB Storage",
         branches: "1 Branch",
         traffic: null, // Do not invent limit
         users: null, // Do not invent limit
@@ -41,13 +42,14 @@ const PRICING_DATA = {
     {
       id: "basic",
       name: "Basic",
-      badge: "Popular Choice",
+      badge: null,
       tagline: "For growing retail shops needing tighter daily control & offline resilience.",
       monthlyPrice: 1000,
       setupFee: 5000,
       limits: {
         products: "250 Products",
-        hosting: "2 GB Storage",
+        hosting: "VPS",
+        storage: "2 GB Storage",
         branches: "1 Branch",
         traffic: "Up to 5,000 visits / mo",
         users: "Up to 5 Admin Users",
@@ -62,19 +64,20 @@ const PRICING_DATA = {
         "Daily Expense Tracking & Reports"
       ],
       ctaText: "Choose Basic",
-      ctaType: "accent",
-      isPopular: true
+      ctaType: "primary",
+      isPopular: false
     },
     {
       id: "medium",
       name: "Medium",
-      badge: "Best Value",
+      badge: null,
       tagline: "For established retail & apparel brands selling both online and offline.",
       monthlyPrice: 2000,
       setupFee: 8000,
       limits: {
         products: "350 Products",
-        hosting: "4 GB Storage",
+        hosting: "AWS",
+        storage: "4 GB Storage",
         branches: "2 Branches",
         traffic: "Up to 10,000 visits / mo",
         users: "Up to 10 Admin Users",
@@ -102,7 +105,8 @@ const PRICING_DATA = {
       setupFee: 15000,
       limits: {
         products: "Unlimited Products",
-        hosting: "10 GB Storage",
+        hosting: "AWS",
+        storage: "10 GB Storage",
         branches: "5 Branches",
         traffic: "Unlimited (Subject to fair-use)",
         users: "Unlimited Admin Users",
@@ -159,7 +163,7 @@ const PRICING_DATA = {
         {
           name: "Product Variants (Size, Color, Weight)",
           tooltip: "Manage variant-level SKU, barcodes, pricing, and stock.",
-          starter: false,
+          starter: true,
           basic: true,
           medium: true,
           high: true
@@ -738,7 +742,15 @@ const PRICING_DATA = {
           high: "Unlimited Users"
         },
         {
-          name: "Cloud Hosting Capacity",
+          name: "Hosting Infrastructure",
+          tooltip: "High-performance deployment server architecture (Shared, VPS, or AWS Cloud).",
+          starter: "Shared",
+          basic: "VPS",
+          medium: "AWS",
+          high: "AWS"
+        },
+        {
+          name: "Cloud Storage Capacity",
           tooltip: "Dedicated cloud storage for catalog images, databases, and invoices.",
           starter: "1 GB",
           basic: "2 GB",
