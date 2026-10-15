@@ -469,8 +469,10 @@ input, textarea, select {
   background: #ffffff;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-full);
-  font-size: 0.8125rem;
+  font-family: var(--font-bengali), var(--font-family);
+  font-size: 0.84rem;
   font-weight: 600;
+  letter-spacing: normal;
   color: var(--primary-800);
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
   margin-bottom: 1.75rem;
@@ -531,11 +533,13 @@ input, textarea, select {
 
 /* Focused, legible description */
 .hero-desc {
+  font-family: var(--font-bengali), var(--font-family);
   font-size: 1.15rem;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.75;
+  letter-spacing: normal;
   margin-bottom: 2.25rem;
-  max-width: 660px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -551,12 +555,14 @@ input, textarea, select {
 }
 
 .hero-actions .btn {
+  font-family: var(--font-bengali), var(--font-family);
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
   padding: 0.85rem 1.85rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: normal;
   border-radius: var(--radius-md);
 }
 
@@ -570,13 +576,15 @@ input, textarea, select {
 
 /* Micro trust assurances */
 .hero-micro-trust {
+  font-family: var(--font-bengali), var(--font-family);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  font-size: 0.8125rem;
+  font-size: 0.86rem;
   color: var(--text-subtle);
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: normal;
   margin-bottom: 3.5rem;
   flex-wrap: wrap;
 }
