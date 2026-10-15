@@ -835,39 +835,39 @@ const PRICING_DATA = {
     }
   ],
 
-  // Frequently Asked Questions
+  // Frequently Asked Questions (বাংলায় সহজে বোধগম্য প্রশ্নোত্তর)
   faqs: [
     {
-      question: "What is the difference between the monthly subscription and the one-time setup fee?",
-      answer: "The monthly subscription covers continuous cloud hosting, system maintenance, software updates, data backups, and technical support. The one-time setup fee covers initial account configuration, cloud server provisioning, database setup, branding integration, and initial onboarding assistance for your team."
+      question: "মাসিক সাবস্ক্রিপশন ফি এবং এককালীন (One-Time) সেটআপ ফির মধ্যে পার্থক্য কী?",
+      answer: "মাসিক সাবস্ক্রিপশন ফি ক্লাউড সার্ভার হোস্টিং, নিরবচ্ছিন্ন ডাটা ব্যাকআপ, সিস্টেম রক্ষণাবেক্ষণ, নিয়মিত সফটওয়্যার আপডেট এবং সার্বক্ষণিক টেকনিক্যাল সাপোর্টের জন্য প্রযোজ্য। অপরদিকে, এককালীন সেটআপ ফি-এর মাধ্যমে আপনার দোকানের নামে সম্পূর্ণ ডাটাবেজ কনফিগারেশন, সার্ভার প্রোভিশনিং, চালান (Invoice) ও মেমোতে লোগো-ঠিকানা ব্র্যান্ডিং এবং আপনার টিমকে সফটওয়্যার ব্যবহারের প্রাথমিক ট্রেনিং প্রদান করা হয়।"
     },
     {
-      question: "What exactly is included in the one-time setup fee?",
-      answer: "The setup fee covers full initial environment deployment, custom invoice and receipt template branding with your store logo and address, configuration of payment methods, user account setups, and hands-on guidance to help your team start operating smoothly."
+      question: "এককালীন সেটআপ ফিতে কী কী সুবিধা অন্তর্ভুক্ত থাকে?",
+      answer: "সেটআপ ফি-এর মধ্যে রয়েছে: ক্লাউড সফটওয়্যারের প্রাথমিক ইনস্টলেশন, দোকানের নাম ও লোগো সম্বলিত কাস্টম ক্যাশ মেমো/চালান ডিজাইন, বিকাশ/নগদ ও ব্যাংক পেমেন্ট মেথড কনফিগারেশন, ইউজার ও ক্যাশিয়ার অ্যাকাউন্ট তৈরি এবং আপনার সেলস ও অ্যাকাউন্টস টিমকে সফটওয়্যার ব্যবহারের বিস্তারিত গাইডলাইন প্রদান।"
     },
     {
-      question: "How does the Offline POS work when the internet is down?",
-      answer: "Our Offline POS caches your product catalog, prices, and barcodes locally in the browser/device. You can continue scanning barcodes, generating customer bills, taking cash payments, and printing receipts without an internet connection. Once your connection is restored, all offline transactions automatically synchronize to the central cloud database with built-in conflict prevention."
+      question: "ইন্টারনেট সংযোগ না থাকলে বা বিদ্যুৎ চলে গেলে অফলাইন POS কীভাবে কাজ করে?",
+      answer: "আমাদের অফলাইন POS সিস্টেমে আপনার সকল পণ্যের তালিকা, স্টক মূল্য এবং বারকোড ব্রাউজারে বা লোকাল ডিভাইসে সংরক্ষিত থাকে। ফলে ইন্টারনেট সংযোগ বিচ্ছিন্ন থাকলেও আপনি স্বাভাবিকভাবে বারকোড স্ক্যান, ক্যাশ মেমো তৈরি, নগদ বিক্রি এবং থার্মাল রসিদ প্রিন্ট করতে পারবেন। পরবর্তীতে ইন্টারনেট সংযোগ ফিরে এলে সকল অফলাইন বিক্রয়ের ডাটা কোনো গড়মিল ছাড়াই স্বয়ংক্রিয়ভাবে মূল ক্লাউড ডাটাবেজে যুক্ত (Sync) হয়ে যাবে।"
     },
     {
-      question: "Can I upgrade or downgrade my package as my business grows?",
-      answer: "Yes, absolutely! You can upgrade to a higher tier at any time as your transaction volume, product count, or branch network expands. All your historical sales, inventory, and accounting data will remain completely intact and transition seamlessly."
+      question: "ব্যবসা সম্প্রসারিত হলে কি পরবর্তীতে ছোট প্যাকেজ থেকে বড় প্যাকেজে আপগ্রেড করা যাবে?",
+      answer: "হ্যাঁ, যেকোনো সময় আপনি খুব সহজে ছোট প্যাকেজ থেকে বড় প্যাকেজে আপগ্রেড করতে পারবেন। আপনার পূর্বের সকল বিক্রয় হিস্ট্রি, স্টক ডাটা, কাস্টমার বাকি-বকেয়া ও অ্যাকাউন্টিং তথ্য সম্পূর্ণ সুরক্ষিত থাকবে এবং কোনো জটিলতা ছাড়াই স্বয়ংক্রিয়ভাবে নতুন প্যাকেজে স্থানান্তরিত হবে।"
     },
     {
-      question: "Which plans include the Dedicated Mobile Apps (Android & iOS)?",
-      answer: "Both the Medium (৳2,000/mo) and High (৳3,000/mo) packages explicitly include dedicated mobile applications for both Android and iOS platforms, allowing your business to provide a branded shopping and management app experience."
+      question: "কোন প্যাকেজগুলোতে নিজস্ব ব্র্যান্ডের মোবাইল অ্যাপ (Android ও iOS) পাওয়া যাবে?",
+      answer: "আমাদের Medium (২,০০০ টাকা/মাস) এবং High (৩,০০০ টাকা/মাস) প্যাকেজে আপনার নিজস্ব দোকানের নামে ডেডিকেটেড Android এবং iOS মোবাইল অ্যাপ অন্তর্ভুক্ত রয়েছে। এর মাধ্যমে কাস্টমাররা সরাসরি অ্যাপ থেকে পণ্য অর্ডার করতে পারবেন এবং আপনি যেকোনো স্থান থেকে মোবাইলেই ব্যবসার লাইভ সেলস ও স্টক রিপোর্ট দেখতে পারবেন।"
     },
     {
-      question: "How do online payment gateways and couriers integrate with the ERP?",
-      answer: "For Medium and High plans, you can connect your merchant accounts for bKash, Nagad, and SSLCommerz for automated online payment validation. Courier integrations with Pathao, Steadfast, and REDX allow you to book consignments with a single click, print shipping labels, track parcels, and reconcile cash-on-delivery payments."
+      question: "বিকাশ, নগদ এবং কুরিয়ার সার্ভিস (পাঠাও, স্টিডফাস্ট ইত্যাদি) কীভাবে সফটওয়্যারের সাথে কাজ করে?",
+      answer: "Medium ও High প্যাকেজে আপনার বিকাশ, নগদ ও SSLCommerz মার্চেন্ট অ্যাকাউন্ট সফটওয়্যারের সাথে অটোমেটিক যুক্ত থাকে। এছাড়া পাঠাও, স্টিডফাস্ট ও রেডেক্স (REDX) কুরিয়ারের সাথে সরাসরি ইন্টিগ্রেশন থাকায় আপনি এক ক্লিকেই পার্সেল এন্ট্রি, শিপিং লেবেল প্রিন্ট এবং ক্যাশ-অন-ডেলিভারি (COD) পেমেন্ট রিকনসিলিয়েশন করতে পারবেন।"
     },
     {
-      question: "What happens if I exceed my product or hosting storage limits?",
-      answer: "We will proactively notify you when you approach 85% and 95% of your plan's storage or product limit. You can seamlessly upgrade to the next tier or request a flexible storage add-on without experiencing any downtime or disruption."
+      question: "পণ্যের সংখ্যা বা হোস্টিং স্টোরেজ লিমিট শেষ হয়ে গেলে কী করণীয়?",
+      answer: "আপনার ব্যবহৃত পণ্যের সংখ্যা বা ক্লাউড স্টোরেজ যখন ৮৫% বা ৯৫% এ পৌঁছাবে, সিস্টেম স্বয়ংক্রিয়ভাবে আপনাকে নোটিফিকেশন প্রদান করবে। আপনার কোনো বিলিং বা সেলস বন্ধ হবে না; আপনি সহজেই পরবর্তী প্যাকেজে আপগ্রেড করতে পারবেন অথবা অতিরিক্ত স্টোরেজ অ্যাড-অন যুক্ত করে নিতে পারবেন।"
     },
     {
-      question: "Can I request custom modules or tailored enterprise integrations?",
-      answer: "Yes! Our Custom / Enterprise tier is tailored specifically for businesses with unique operating procedures, specialized production pipelines, or legacy system integrations. Contact our sales team for an architecture consultation and tailored proposal."
+      question: "আমাদের ব্যবসার নিজস্ব নিয়ম বা কাস্টম মডিউল কি সফটওয়্যারে যুক্ত করা সম্ভব?",
+      answer: "অবশ্যই! আপনার ব্যবসার কাজের ধরন যদি বিশেষায়িত হয় বা নিজস্ব কোনো সফটওয়্যারের সাথে ইন্টিগ্রেশনের প্রয়োজন থাকে, তবে আমাদের Custom / Enterprise প্ল্যানের আওতায় আপনার চাহিদা অনুযায়ী কাস্টম ফিচার বা মডিউল ডেভেলপ করে দেওয়া হবে। বিস্তারিত পরামর্শের জন্য আমাদের সেলস টিমের সাথে যোগাযোগ করুন।"
     }
   ]
 };
