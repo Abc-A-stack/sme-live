@@ -71,7 +71,7 @@ const PRICING_DATA = {
     {
       id: "medium",
       name: "Medium",
-      badge: null,
+      badge: "Popular",
       tagline: "For established retail & apparel brands selling both online and offline.",
       monthlyPrice: 2000,
       setupFee: 8000,
@@ -95,13 +95,13 @@ const PRICING_DATA = {
         "CRM, Sales Team & Loyalty Management"
       ],
       ctaText: "Choose Medium",
-      ctaType: "primary",
-      isPopular: false
+      ctaType: "accent",
+      isPopular: true
     },
     {
       id: "high",
       name: "High",
-      badge: "Complete Suite",
+      badge: null,
       tagline: "For large retail chains, super shops & enterprises demanding total automation.",
       monthlyPrice: 3000,
       setupFee: 15000,
