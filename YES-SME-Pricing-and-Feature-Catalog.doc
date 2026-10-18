@@ -840,7 +840,7 @@ body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; font-size: 9.5pt; co
           
             <li class="capacity-item">
               <span style="color:#1d4ed8; font-weight:bold; font-size:10pt; margin-right:4px;">&#9656;</span>
-              <span>Branches: <strong>1 Branch</strong></span>
+              <span>Store: <strong>1 store</strong></span>
             </li>
           
               </ul>
@@ -893,7 +893,7 @@ body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; font-size: 9.5pt; co
           
             <li class="capacity-item">
               <span style="color:#1d4ed8; font-weight:bold; font-size:10pt; margin-right:4px;">&#9656;</span>
-              <span>Branches: <strong>1 Branch</strong></span>
+              <span>Store: <strong>1 store</strong></span>
             </li>
           
             <li class="capacity-item">
@@ -1915,8 +1915,8 @@ body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; font-size: 9.5pt; co
                         <span class="feat-name">Multi-Branch Outlets &amp; Branch Managers</span>
                         <span class="feat-sub">Add multiple physical outlets with dedicated branch manager permissions.</span>
                       </td>
-                      <td class="cell-val"><span class="pill-val">1 Branch</span></td>
-                      <td class="cell-val"><span class="pill-val">1 Branch</span></td>
+                      <td class="cell-val"><span class="pill-val">1 store</span></td>
+                      <td class="cell-val"><span class="pill-val">1 store</span></td>
                       <td class="cell-val" style="background: rgba(239, 246, 255, 0.4);"><span class="pill-val">2 Branches</span></td>
                       <td class="cell-val"><span class="pill-val">5 Branches</span></td>
                     </tr>

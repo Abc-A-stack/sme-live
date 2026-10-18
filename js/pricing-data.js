@@ -31,7 +31,7 @@ const PRICING_DATA = {
         products: "200 Products",
         hosting: "Shared",
         storage: "1 GB Storage",
-        branches: "1 Branch",
+        store: "1 store",
         traffic: null, // Do not invent limit
         users: null, // Do not invent limit
       },
@@ -60,7 +60,7 @@ const PRICING_DATA = {
         hosting: "VPS",
         website: "Free Website",
         storage: "2 GB Storage",
-        branches: "1 Branch",
+        store: "1 store",
         traffic: "Up to 5,000 visits / mo",
         users: "Up to 5 Admin Users",
       },
@@ -717,8 +717,8 @@ const PRICING_DATA = {
         {
           name: "Multi-Branch Outlets & Branch Managers",
           tooltip: "Add multiple physical outlets with dedicated branch manager permissions.",
-          starter: "1 Branch",
-          basic: "1 Branch",
+          starter: "1 store",
+          basic: "1 store",
           medium: "2 Branches",
           high: "5 Branches"
         },

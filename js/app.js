@@ -75,6 +75,14 @@ function initPricingCards() {
         </li>
       `);
     }
+    if (pkg.limits.store) {
+      capacityItems.push(`
+        <li class="capacity-item">
+          ${ICONS.branch}
+          <span>Store: <strong>${pkg.limits.store}</strong></span>
+        </li>
+      `);
+    }
     if (pkg.limits.branches) {
       capacityItems.push(`
         <li class="capacity-item">
