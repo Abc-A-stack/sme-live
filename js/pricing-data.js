@@ -10,6 +10,15 @@ const PRICING_DATA = {
     label: "BDT (Bangladeshi Taka)"
   },
 
+  contact: {
+    hotline: "01955345331",
+    hotlineFormatted: "+880 1955-345331",
+    email: "info@yesbangladesh.net",
+    supportEmail: "info@yesbangladesh.net",
+    website: "www.yesbangladesh.net",
+    address: "House 43, Road 16, Nikunja 2, Khilkhet, Dhaka-1229, Bangladesh"
+  },
+
   packages: [
     {
       id: "starter",
@@ -763,7 +772,7 @@ const PRICING_DATA = {
         {
           name: "Monthly Web Traffic",
           tooltip: "E-commerce and admin web traffic bandwidth.",
-          starter: "Fair Usage",
+          starter: false,
           basic: "Up to 5,000 visits",
           medium: "Up to 10,000 visits",
           high: "Unlimited (Fair-use)"
